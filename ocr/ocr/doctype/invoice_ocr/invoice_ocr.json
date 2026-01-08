@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-11 12:38:52.775709",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ocr_section",
+  "upload_file",
+  "vendor_name",
+  "invoice_no",
+  "invoice_date",
+  "total_amount",
+  "item",
+  "column_break_spbv",
+  "uploaded_file",
+  "extracted_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "upload_file",
+   "fieldtype": "Attach",
+   "label": "Upload file"
+  },
+  {
+   "fieldname": "vendor_name",
+   "fieldtype": "Link",
+   "label": "Vendor Name",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "invoice_date",
+   "fieldtype": "Data",
+   "label": "Invoice Date"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Item Ocr"
+  },
+  {
+   "fieldname": "column_break_spbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uploaded_file",
+   "fieldtype": "Image",
+   "label": "Uploaded File",
+   "options": "upload_file"
+  },
+  {
+   "fieldname": "extracted_data",
+   "fieldtype": "Long Text",
+   "label": "Extracted data"
+  },
+  {
+   "fieldname": "ocr_section",
+   "fieldtype": "Section Break",
+   "label": "OCR"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-12-18 12:16:13.236687",
+ "modified_by": "Administrator",
+ "module": "Ocr",
+ "name": "Invoice Ocr",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
